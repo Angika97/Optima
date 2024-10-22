@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Cambiar a una fuente más moderna */
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Degradado suave */
+  color: #37474f; /* Color de texto más oscuro */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00796b; /* Color del título */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #004d40; /* Color del subtítulo */
+  margin-bottom: 10px;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Notificaciones */
+.notification {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease;
+}
+
+/* Barra de filtro */
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.filter-container input {
+  width: 250px; 
+  padding: 12px; 
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  outline: none;
+  background-color: #e1f5fe; /* Color del cuadro de filtro */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.filter-container input:focus {
+  border-color: #00796b; /* Color al enfocar */
+}
+
+/* Estilos de la lista de productos */
+.product-list-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+  background-color: #00796b; /* Color del encabezado */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: bold;
+}
+
+table th:hover {
+  background-color: #004d40; /* Color al pasar el mouse */
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+table tbody tr:hover {
+  background-color: #e0f7fa; /* Color al pasar el mouse */
+}
+
+table td {
+  font-size: 0.9rem;
+  color: #555; /* Color de texto más claro */
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #fb8c00; /* Color al pasar el mouse */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Botones de acción */
+.action-buttons {
+  display: flex;
+  justify-content: center; /* Centrando los botones */
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px; /* Aumentado el alto del botón */
+  width: 40%; /* Mantener un ancho más pequeño */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.action-buttons button:hover {
+  background-color: #d32f2f;
+}
+
+.action-buttons button:nth-of-type(1) {
+  background-color: #4caf50;
+}
+
+.action-buttons button:nth-of-type(1):hover {
+  background-color: #388e3c;
+}
+
+/* Espaciado adicional */
+table {
+  margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  width: 100%; 
+  padding: 15px; 
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box; 
+}
+
+form button {
+  background-color: #3f51b5; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px; /* Aumentado el alto del botón */
+  width: 40%; /* Ancho más pequeño */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Centra el botón */
+}
+
+form button:hover {
+  background-color: #303f9f; 
+}
+
+/* Agregar un efecto de sombra a los botones */
+form button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
