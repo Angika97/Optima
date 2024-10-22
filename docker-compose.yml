@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  # Servicio para el backend Flask
+  backend:
+    build:
+      context: ./backend  # Ruta del backend
+      dockerfile: Dockerfile  # Dockerfile del backend
+    ports:
+      - "5000:5000"  # Expone el puerto 5000 para Flask
+    volumes:
+      - ./backend:/app  # Monta la carpeta del backend para desarrollo
+
+  # Servicio para el frontend React
+  frontend:
+    build:
+      context: ./react-crud  # Ruta del frontend
+      dockerfile: Dockerfile  # Dockerfile del frontend
+    ports:
+      - "3000:80"  # Expone el puerto 3000 para React
+    volumes:
+      - ./react-crud:/app  # Monta la carpeta del frontend para desarrollo
